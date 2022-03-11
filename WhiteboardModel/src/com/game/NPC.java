@@ -39,10 +39,11 @@ public class NPC {
         name = "No Name";
     }
     public NPC(String name) {
+        this();
         setName(name);
     }
     public NPC(String name, int age) {
-        this();
+        this(name);
         setAge(age);
     }
 
