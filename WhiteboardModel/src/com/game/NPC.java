@@ -7,6 +7,7 @@ import com.game.Race;
 import com.game.Sex;
 
 public class NPC {
+    // fields
     public static final String poem = "I met a traveller from an antique land,\n" + //public String riddles
             "Who said—“Two vast and trunkless legs of stone\n" +
             "Stand in the desert. . . . Near them, on the sand,\n" +
@@ -33,8 +34,19 @@ public class NPC {
     private int age;
     private int strength;
 
+    // constructors
+    public NPC() {
+        name = "No Name";
+    }
+    public NPC(String name) {
+        setName(name);
+    }
+    public NPC(String name, int agege) {
+        this();
+        setAge(age);
+    }
 
-    //METHODS
+    // business methods
     public String poem() { // Responds with a poem
         return poem;
     }
@@ -48,7 +60,7 @@ public class NPC {
         return sentence;
     }
 
-    // Getters & Setters
+    // accessors
 
     public Sex getSex() {
         return sex;
@@ -123,6 +135,8 @@ public class NPC {
             System.out.println(speed + " is not a correct input, please choose either 'walk' or 'run'");
         }
     }
+
+    // toString
 
     public String toString() {
         return "\nName- " + name + "\ncom.game.Race: " + race + "\ncom.game.Sex: " +sex + "\nRiddle: " + riddle +
