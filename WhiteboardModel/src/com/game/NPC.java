@@ -41,7 +41,7 @@ public class NPC {
     public NPC(String name) {
         setName(name);
     }
-    public NPC(String name, int agege) {
+    public NPC(String name, int age) {
         this();
         setAge(age);
     }
