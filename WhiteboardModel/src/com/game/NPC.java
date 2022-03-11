@@ -139,7 +139,8 @@ public class NPC {
     // toString
 
     public String toString() {
-        return "\nName- " + name + "\ncom.game.Race: " + race + "\ncom.game.Sex: " +sex + "\nRiddle: " + riddle +
+        return "\nName- " + name + "\nAge- " + age + "\ncom.game.Race: " + race +
+                "\ncom.game.Sex: " +sex + "\nRiddle: " + riddle +
                 "\nAnswer: " + answer + "\nSaying: " + saying;
     }
 }
